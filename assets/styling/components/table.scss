@@ -1,0 +1,83 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/* Basic table styling */
+.table {
+    font-size: $fontSizeNormal;
+    color: inherit;
+}
+
+/* Filter table styling */
+.table__filter {
+    margin-top: 5rem;
+}
+
+/* Nested table styling */
+.table__td-table,
+.table__td-table .table--nested {
+    font-size: $fontSizeSmall;
+    background-color: rgba(0,0,0,.075);
+}
+
+/* Nested table head */
+.table--nested thead {
+    color: $white;
+    background-color: $darkRed;
+}
+
+.table--nested thead tr:hover {
+    color: $white;
+}
+
+/* Table higlated rows */
+.row--active {
+    background-color: rgba(0,0,0,.075);
+}
+
+/* Table hidden rows */
+.row--hidden {
+    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* Table align text right */
+.table--align-right {
+    text-align: right;
+}
+
+/* Table icon styling */
+.table--icon {
+    color: $red;
+    transition: all 0.2s ease-in;
+}
+
+.table--icon:hover {
+    color: $darkRed;
+}
+
+.table--link {
+    background-color:$silver;
+    color: $white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: $fontSizeSmall;
+    font-family: $titleFont;
+    cursor: pointer;
+}
+
+.table--link:hover {
+    color: $white;
+    text-decoration: none;
+}
+
+/* Styling for the next grand prix table row */
+.table--current {
+    background-color: rgba($color: $darkRed, $alpha: .25);
+}
+
+.table--current:hover,
+.table--current:focus {
+    background-color: rgba($color: $darkRed, $alpha: .5) !important;
+}

@@ -1,0 +1,166 @@
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General form styling */
+/* Form label styling */
+.form__label {
+  font-size: 1.6rem;
+}
+
+/* Form input styling */
+.form__input {
+  height: calc(2.25em + 2px);
+  font-size: 1.6rem;
+  border-radius: 0.25em;
+}
+
+/* Form select styling */
+.form__select {
+  font-size: 1.6rem;
+  border-radius: 0.25em;
+}
+
+/*
+ * Form icon input
+ */
+.search--icon {
+  position: absolute;
+  top: 25%;
+  left: 2.5rem;
+  color: #6f6f6f;
+  font-size: 1.6rem;
+}
+
+.input--icon {
+  font-size: 1.6rem;
+  padding-left: 3.5rem;
+}
+
+/*
+ * Form checkbox styling 
+ */
+/* The label */
+.form__checkbox {
+  display: block;
+  position: relative;
+  font-size: 1.4rem;
+  padding-left: 2.5rem;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+/* Hiding the input box */
+.form__checkbox input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+/* Creating a new checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border: 0.1rem solid red;
+  -webkit-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+/* Add a hover color for the new checkbox */
+.form__checkbox:hover input ~ .checkmark {
+  background-color: rgba(111, 111, 111, 0.2);
+}
+
+/* Add red background color on checked state */
+.form__checkbox input:checked ~ .checkmark {
+  background-color: red;
+}
+
+/* Creating a checkmarker, only visible when checked */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.form__checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.form__checkbox .checkmark:after {
+  left: 0.8rem;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 1rem;
+  border: solid white;
+  border-width: 0 0.3rem 0.3rem 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* Form button styling */
+.form__button {
+  color: #212121;
+  font-size: 1.4rem;
+  font-family: "Formula1", monospace;
+  padding: 0.5rem 1.5rem;
+  border-color: red;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.form__button:hover,
+.form__button:focus {
+  color: white;
+  background-color: red;
+}
+
+/* Form button full length */
+.form__button--full-width {
+  width: 100%;
+}
+
+/* Form feedback styling */
+.form__feedback {
+  display: block;
+  height: 1.6rem;
+  margin: 0.5rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+/* Span feedback from the form validation */
+.feedback--bad {
+  color: #dc3545;
+}
+
+.feedback--good {
+  color: #28a745;
+}
+
+/* Input feedback from the form validaiton */
+.input--bad {
+  border-color: #dc3545;
+}
+
+.input--good {
+  border-color: #28a745;
+}
+/*# sourceMappingURL=form.css.map */

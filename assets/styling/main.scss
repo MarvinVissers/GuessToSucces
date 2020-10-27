@@ -1,0 +1,56 @@
+// Importing the variables and funtions
+@import 'components/variables.scss';
+@import 'components/mixins.scss';
+
+/* Basic page styling */
+html, body {
+    position: relative;
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    font-size: 0.625em;
+    font-family: $textFont;
+    line-height: 1.5;
+    color: $black;
+    background-color: $lightGrey;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+    color: $white;
+    background-color: $darkRed;
+}
+
+/* Main page styling */
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100%;
+    margin: 2.5rem 2.5rem 2.5rem 27.5rem;
+    transition: 0.2s all ease-in;
+}
+
+.content--full-width {
+    margin-left: 8.5rem;
+}
+
+.container__title {
+    color: $black;
+    font-size: $fontSizeTitle;
+    padding-bottom: 2rem;
+}
+
+.row {
+    overflow: hidden;
+}
+
+// Importing components
+@import 'components/menu.scss';
+@import 'components/table.scss';
+@import 'components/form.scss';
+@import 'components/modal.scss';
+// @import 'components/fade-in.scss';

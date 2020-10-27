@@ -1,0 +1,51 @@
+// SCSS Variables files 
+
+// 
+// Colors
+//
+// Color palette colors
+$white: rgb(255, 255, 255); // Accent
+$lightGrey: rgb(245, 245, 245); // Background
+$red: rgb(255, 0, 0); // Main color
+$darkRed: rgb(184, 5, 0); // Accent
+$silver: rgb(111, 111, 111); // Accent
+$black: rgb(33, 33, 33); // Text color
+
+// feedback colors
+$feedbackGood:  rgb(40, 167, 69);
+$feedbackBad:  rgb(220, 53, 69);
+
+//
+// Fonts
+//
+/* Linking to custom F1 font */
+@font-face {
+    font-family: 'Formula1';
+    src: url('../../fonts/Formula1-Regular.ttf') format('truetype'),
+         url('../../fonts/Formula1-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Text fonts 
+$textFont: 'Open Sans', sans-serif;
+$titleFont: 'Formula1', monospace;
+
+// Font sizes
+$fontSizeSmall: 1.4rem;
+$fontSizeNormal: 1.6rem;
+$fontSizeLarge: 2rem;
+$fontSizeSubtitle: 2.4rem;
+$fontSizeTitle: 3.2rem;
+
+// 
+// Breakpoints
+//
+// Small devices (landscape phones, 576px and up)
+$media-breakpoint-up-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$media-breakpoint-up-md: 768px;
+// Large devices (desktops, 992px and up)
+$media-breakpoint-up-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$media-breakpoint-up-xl: 1200px;

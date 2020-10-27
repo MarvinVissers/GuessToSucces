@@ -1,0 +1,78 @@
+// Importing variables and mixins
+@import '../components/variables.scss';
+@import '../components/mixins.scss';
+
+/* Overview bet cards */
+.bet-overview__cards {
+    font-size: $fontSizeSmall;
+    margin-top: 5rem;
+}
+
+.card {
+    margin-bottom: 2.5rem;
+}
+
+/* Card title */
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    color: $black;
+    font-size: $fontSizeNormal;
+}
+
+/* Card subtitle */
+.card-subtitle {
+    color: $silver;
+    text-transform: capitalize;
+    font-size: $fontSizeSmall;
+    padding-bottom: 1rem;
+}
+
+/* Card p without margin */
+.card--no-margin {
+    margin-bottom: 0;
+}
+
+/* Card links */
+.card__link {
+    @include defaultLink;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+/* Making sure the first link does not have a margin-left */
+.card__link:first-child {
+    margin-left: 0;
+}
+
+.card__link::after {
+    @include defaultLinkAfter;
+}
+
+.card__link:hover {
+    @include defaultLinkHover;
+}
+
+.card__link:hover::after {
+    @include defaultLinkHoverAfter;
+}
+
+/* Card edit styling */
+.card--hide {
+    display: none;
+}
+
+.card--input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+.card__input {
+    display: inline-block;
+    max-width: 12rem;
+    font-size: 1.2rem;
+}

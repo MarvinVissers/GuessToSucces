@@ -1,0 +1,26 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/* Styling for sections sections before they fade in */
+.section--fade-in {
+    margin-top: 5vh;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Section when the animation is finished */
+.section--visible {
+    margin-top: 0;
+    opacity: 1;
+}
+
+/* Styling for the sidebar before the fade-in */
+.sidebar--fade-in {
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: 0.5s;
+}
+
+.sidebar--visible {
+    opacity: 1;
+}

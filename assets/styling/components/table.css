@@ -1,0 +1,90 @@
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Basic table styling */
+.table {
+  font-size: 1.6rem;
+  color: inherit;
+}
+
+/* Filter table styling */
+.table__filter {
+  margin-top: 5rem;
+}
+
+/* Nested table styling */
+.table__td-table,
+.table__td-table .table--nested {
+  font-size: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Nested table head */
+.table--nested thead {
+  color: white;
+  background-color: #b80500;
+}
+
+.table--nested thead tr:hover {
+  color: white;
+}
+
+/* Table higlated rows */
+.row--active {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Table hidden rows */
+.row--hidden {
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* Table align text right */
+.table--align-right {
+  text-align: right;
+}
+
+/* Table icon styling */
+.table--icon {
+  color: red;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.table--icon:hover {
+  color: #b80500;
+}
+
+.table--link {
+  background-color: #6f6f6f;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-family: "Formula1", monospace;
+  cursor: pointer;
+}
+
+.table--link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styling for the next grand prix table row */
+.table--current {
+  background-color: rgba(184, 5, 0, 0.25);
+}
+
+.table--current:hover,
+.table--current:focus {
+  background-color: rgba(184, 5, 0, 0.5) !important;
+}
+/*# sourceMappingURL=table.css.map */

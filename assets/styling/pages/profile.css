@@ -1,0 +1,37 @@
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* barnkrupt block styling */
+.bankrupt {
+  margin-top: 5rem;
+}
+
+/* Bankrupt title */
+.bankrupt__title {
+  padding-bottom: 1rem;
+}
+
+/* bankrupt button styling */
+.bankrupt__button {
+  color: #212121;
+  font-size: 1.4rem;
+  font-family: "Formula1", monospace;
+  padding: 0.5rem 1.5rem;
+  border-color: red;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.bankrupt__button:hover,
+.bankrupt__button:focus {
+  color: white;
+  background-color: red;
+}
+/*# sourceMappingURL=profile.css.map */

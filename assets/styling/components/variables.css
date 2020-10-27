@@ -1,0 +1,8 @@
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=variables.css.map */

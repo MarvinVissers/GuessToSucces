@@ -1,0 +1,23 @@
+// Importing variables and mixins
+@import '../components/variables.scss';
+@import '../components/mixins.scss';
+
+/* barnkrupt block styling */
+.bankrupt {
+    margin-top: 5rem;
+}
+
+/* Bankrupt title */
+.bankrupt__title {
+    padding-bottom: 1rem;
+}
+
+/* bankrupt button styling */
+.bankrupt__button {
+    @include btnDefault;
+}
+
+.bankrupt__button:hover,
+.bankrupt__button:focus {
+    @include btnDefaultHover;
+}

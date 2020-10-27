@@ -1,0 +1,280 @@
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Styling for the categories list */
+.categorie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 2.5rem;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+/* Categorie list item */
+.categorie__item {
+  color: white;
+  background-color: red;
+  border-radius: 2rem;
+  list-style: none;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+}
+
+/* Categorie hover and focus styling */
+.categorie__item:hover, .categorie__item--active,
+.categorie__item:focus {
+  background-color: #b80500;
+}
+
+/* Active categorie styling */
+/* Categorie list item text */
+.categorie--text {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+/* Styling for the grid */
+.f1grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+/* Styling for the grid position */
+.f1grid__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  max-width: 25rem;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  -webkit-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+}
+
+/* Left grid position */
+.f1grid__position:nth-child(odd) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: calc(50% + 2.5rem);
+}
+
+/* Right grid position */
+.f1grid__position:nth-child(even) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: calc(50% + 2.5rem);
+}
+
+/* Grid position hover */
+.f1grid__position:hover,
+.f1grid__position:focus {
+  background-color: white;
+}
+
+/* Styling for the grid posisiton inner */
+.f1grid__inner {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0.5rem 2.5rem;
+  border: 0.1rem solid rgba(33, 33, 33, 0.4);
+  border-bottom: none;
+}
+
+/* Styling for the part where the bet is placed */
+.bet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  background-color: white;
+  border: 0.1rem solid rgba(33, 33, 33, 0.4);
+}
+
+/* Bet container */
+.bet__inner {
+  height: 100%;
+  width: 100%;
+}
+
+/* Top part of the bet container */
+.bet__header {
+  color: white;
+  background: red;
+  padding: 0.5rem;
+}
+
+/* bet container title */
+.bet__title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* Bet container middle */
+.bet__body {
+  padding: 0 0.5rem;
+}
+
+/* Bet categorie head */
+.bet-categorie__head {
+  position: relative;
+  margin: 0 -0.5rem;
+  padding: 1rem;
+  background-color: rgba(111, 111, 111, 0.4);
+  border: 0.1rem solid rgba(33, 33, 33, 0.4);
+  cursor: pointer;
+}
+
+/* Bet categorie title */
+.bet-categorie__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+/* Bet categorie title icon to open and close categorie */
+.bet-categorie--icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.6rem;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.bet-categorie--icon--open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* Bet categorie body */
+.bet-categorie__body {
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.bet-categorie__body--open {
+  max-height: 50rem;
+}
+
+/* Bet container middle categorie parts */
+/* Bet on part */
+.bet-categorie__beton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+/* Points bet part */
+.bet-categorie__points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Payout part */
+.bet-categorie__payout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2.5rem;
+}
+
+/* Bet container middle categorie label */
+.bet__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Bet container middle categorie input */
+.bet__input {
+  font-size: 1.4rem;
+  width: 100%;
+  max-width: 10rem;
+  margin: 0.5rem 0;
+}
+
+/* Bet container bottom */
+.bet__footer {
+  padding: 0.5rem;
+  border-top: 0.1rem solid rgba(33, 33, 33, 0.4);
+}
+
+/* Total of the bets */
+.bet__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+/* Totalf of the bets points */
+.bet--total {
+  font-family: "Formula1", monospace;
+  font-weight: 700;
+}
+/*# sourceMappingURL=index.css.map */

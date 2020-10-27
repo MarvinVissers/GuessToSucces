@@ -1,0 +1,624 @@
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Basic page styling */
+html, body {
+  position: relative;
+  height: auto;
+  max-height: 100%;
+  width: 100%;
+  font-size: 0.625em;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #212121;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::-moz-selection {
+  color: white;
+  background-color: #b80500;
+}
+::selection {
+  color: white;
+  background-color: #b80500;
+}
+
+/* Main page styling */
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 100%;
+  margin: 2.5rem 2.5rem 2.5rem 27.5rem;
+  -webkit-transition: 0.2s all ease-in;
+  transition: 0.2s all ease-in;
+}
+
+.content--full-width {
+  margin-left: 8.5rem;
+}
+
+.container__title {
+  color: #212121;
+  font-size: 3.2rem;
+  padding-bottom: 2rem;
+}
+
+.row {
+  overflow: hidden;
+}
+
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  max-width: 25rem;
+  padding: 1rem 0rem;
+  color: white;
+  background-color: red;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-right: 2.5rem;
+}
+
+/* Navbar close styling */
+.navbar--close {
+  max-width: 6rem;
+}
+
+.navbar--close .mobile--hide {
+  max-width: 0;
+  overflow: hidden;
+}
+
+/* Navbar list */
+.navbar__list {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar list item */
+.navbar__item {
+  list-style: none;
+  padding: 0.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/* Navbar list item link */
+.navbar__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  max-height: 3rem;
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.navbar__link .navbar--icon {
+  width: 4rem;
+  text-align: center;
+}
+
+/* Navbar link hover and navbar link actieve styling */
+.navbar__link:hover, .navbar--active {
+  color: white;
+  text-decoration: none;
+  background-color: #b80500;
+}
+
+/* Navbar top */
+.navbar__top {
+  height: auto;
+  padding: 1rem 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Navbar top */
+.navbar__middle {
+  height: auto;
+  padding: 1rem 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Navbar top */
+.navbar__bottom {
+  height: auto;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Navbar toggle */
+.navbar__toggle {
+  position: absolute;
+  top: 2.5rem;
+  right: -1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #212121;
+  cursor: pointer;
+}
+
+.navbar--icon {
+  width: 2.5rem;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.navbar-toggle--closed {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Basic table styling */
+.table {
+  font-size: 1.6rem;
+  color: inherit;
+}
+
+/* Filter table styling */
+.table__filter {
+  margin-top: 5rem;
+}
+
+/* Nested table styling */
+.table__td-table,
+.table__td-table .table--nested {
+  font-size: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Nested table head */
+.table--nested thead {
+  color: white;
+  background-color: #b80500;
+}
+
+.table--nested thead tr:hover {
+  color: white;
+}
+
+/* Table higlated rows */
+.row--active {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Table hidden rows */
+.row--hidden {
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* Table align text right */
+.table--align-right {
+  text-align: right;
+}
+
+/* Table icon styling */
+.table--icon {
+  color: red;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.table--icon:hover {
+  color: #b80500;
+}
+
+.table--link {
+  background-color: #6f6f6f;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-family: "Formula1", monospace;
+  cursor: pointer;
+}
+
+.table--link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styling for the next grand prix table row */
+.table--current {
+  background-color: rgba(184, 5, 0, 0.25);
+}
+
+.table--current:hover,
+.table--current:focus {
+  background-color: rgba(184, 5, 0, 0.5) !important;
+}
+
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General form styling */
+/* Form label styling */
+.form__label {
+  font-size: 1.6rem;
+}
+
+/* Form input styling */
+.form__input {
+  height: calc(2.25em + 2px);
+  font-size: 1.6rem;
+  border-radius: 0.25em;
+}
+
+/* Form select styling */
+.form__select {
+  font-size: 1.6rem;
+  border-radius: 0.25em;
+}
+
+/*
+ * Form icon input
+ */
+.search--icon {
+  position: absolute;
+  top: 25%;
+  left: 2.5rem;
+  color: #6f6f6f;
+  font-size: 1.6rem;
+}
+
+.input--icon {
+  font-size: 1.6rem;
+  padding-left: 3.5rem;
+}
+
+/*
+ * Form checkbox styling 
+ */
+/* The label */
+.form__checkbox {
+  display: block;
+  position: relative;
+  font-size: 1.4rem;
+  padding-left: 2.5rem;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+/* Hiding the input box */
+.form__checkbox input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+/* Creating a new checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border: 0.1rem solid red;
+  -webkit-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+/* Add a hover color for the new checkbox */
+.form__checkbox:hover input ~ .checkmark {
+  background-color: rgba(111, 111, 111, 0.2);
+}
+
+/* Add red background color on checked state */
+.form__checkbox input:checked ~ .checkmark {
+  background-color: red;
+}
+
+/* Creating a checkmarker, only visible when checked */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.form__checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.form__checkbox .checkmark:after {
+  left: 0.8rem;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 1rem;
+  border: solid white;
+  border-width: 0 0.3rem 0.3rem 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* Form button styling */
+.form__button {
+  color: #212121;
+  font-size: 1.4rem;
+  font-family: "Formula1", monospace;
+  padding: 0.5rem 1.5rem;
+  border-color: red;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.form__button:hover,
+.form__button:focus {
+  color: white;
+  text-decoration: none;
+  background-color: red;
+}
+
+/* Form button full length */
+.form__button--full-width {
+  width: 100%;
+}
+
+/* Form feedback styling */
+.form__feedback {
+  display: block;
+  height: 1.6rem;
+  margin: 0.5rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+/* Span feedback from the form validation */
+.feedback--bad {
+  color: #dc3545;
+}
+
+.feedback--good {
+  color: #28a745;
+}
+
+/* Input feedback from the form validaiton */
+.input--bad {
+  border-color: #dc3545;
+}
+
+.input--good {
+  border-color: #28a745;
+}
+
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Basic modal styling */
+.modal {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: rgba(33, 33, 33, 0.4);
+}
+
+/* Making the model visible */
+.modal--visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Modal content styling */
+.modal__content {
+  display: block;
+  width: 90%;
+  max-width: 50rem;
+  margin-top: 50rem;
+  background-color: white;
+  border: 0.2rem solid rgba(111, 111, 111, 0.4);
+  border-collapse: collapse;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.modal__content-show {
+  margin-top: 2.5rem;
+}
+
+/* Top part of the modal */
+.modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+/* Middle part of the modal */
+.modal__body {
+  padding: 1.5rem 1rem;
+  border: 0.2rem solid rgba(111, 111, 111, 0.4);
+  border-left: none;
+  border-right: none;
+}
+
+/* Bottom part of the modal */
+.modal__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+/* Ttile of the modal */
+.modal__title {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* X next to the title of the modal */
+.modal__close {
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+}
+
+/* Text of the modal */
+.modal__text {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Modal cancel button */
+.modal__cancel {
+  background-color: #6f6f6f;
+  color: #212121;
+  margin-right: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.4rem;
+  font-family: "Formula1", monospace;
+  border-color: #6f6f6f;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Modal cancel button hover */
+.modal__cancel:hover,
+.modal__cancel:focus {
+  color: white;
+  background-color: #6f6f6f;
+}
+
+/* Modal agree button */
+.modal__submit, .modal--link {
+  color: #212121;
+  font-size: 1.4rem;
+  font-family: "Formula1", monospace;
+  padding: 0.5rem 1.5rem;
+  border-color: red;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Modal agree button hover and focus */
+.modal__submit:hover, .modal--link:hover,
+.modal--link:focus,
+.modal__submit:focus,
+.modal--link:focus {
+  color: white;
+  text-decoration: none;
+  background-color: red;
+}
+
+.modal--link {
+  border: 0.2rem solid red;
+}
+
+.modal--link:hover,
+.modal--link:focus {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

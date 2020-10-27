@@ -1,0 +1,123 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem 0rem;
+    color: $white;
+    background-color: $red;
+    transition: all 0.2s ease-in;
+    margin-right: 2.5rem;
+}
+
+/* Navbar close styling */
+.navbar--close {
+    max-width: 6rem;
+
+    .mobile--hide {
+        max-width: 0;
+        overflow: hidden;
+    }
+}
+
+/* Navbar list */
+.navbar__list {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar list item */
+.navbar__item {
+    list-style: none;
+    padding: 0.5rem;
+    transition: all 0.2s ease-in;
+}
+
+/* Navbar list item link */
+.navbar__link {
+    display: flex;
+    height: 100%;
+    max-height: 3rem;
+    color: $white;
+    font-size: $fontSizeNormal;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    transition: all 0.2s ease-in;
+
+    .navbar--icon {
+        width: 4rem;
+        text-align: center;
+    }
+}
+
+/* Navbar link hover and navbar link actieve styling */
+.navbar__link:hover {
+    color: $white;
+    text-decoration: none;
+    background-color: $darkRed;
+}
+
+.navbar--active {
+    @extend .navbar__link:hover;
+}
+
+/* Navbar top */
+.navbar__top {
+    @include navbarSection;
+    position: relative;
+    width: 100%;
+}
+
+/* Navbar top */
+.navbar__middle {
+    @include navbarSection;
+    position: relative;
+    width: 100%;
+}
+
+/* Navbar top */
+.navbar__bottom {
+    @include navbarSection;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Navbar toggle */
+.navbar__toggle {
+    position: absolute;
+    top: 2.5rem;
+    right: -1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $black;
+    cursor: pointer;
+}
+
+.navbar--icon {
+    width: 2.5rem;
+    color: $white;
+    font-size: 2rem;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+.navbar-toggle--closed {
+    transform: rotate(180deg);
+}

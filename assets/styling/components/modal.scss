@@ -1,0 +1,117 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/* Basic modal styling */
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba($color: $black, $alpha: 0.4);
+}
+
+/* Making the model visible */
+.modal--visible {
+    display: flex;
+}
+
+/* Modal content styling */
+.modal__content {
+    display: block;
+    width: 90%;
+    max-width: 50rem;
+    margin-top: 50rem;
+    background-color: $white;
+    border: 0.2rem solid rgba($color: $silver, $alpha: 0.4);
+    border-collapse: collapse;
+    transition: all 0.4s ease-in-out;
+}
+
+.modal__content-show {
+    margin-top: 2.5rem;
+}
+
+/* Top part of the modal */
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+/* Middle part of the modal */
+.modal__body {
+    padding: 1.5rem 1rem;
+    border: 0.2rem solid rgba($color: $silver, $alpha: 0.4);
+    border-left: none;
+    border-right: none;
+}
+
+/* Bottom part of the modal */
+.modal__footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+/* Ttile of the modal */
+.modal__title {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* X next to the title of the modal */
+.modal__close {
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+}
+
+/* Text of the modal */
+.modal__text {
+    font-size: $fontSizeSmall;
+    margin: 0;
+}
+
+/* Modal cancel button */
+.modal__cancel {
+    background-color:$silver;
+    color: $black;
+    margin-right: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: $fontSizeSmall;
+    font-family: $titleFont;
+    border-color: $silver;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Modal cancel button hover */
+.modal__cancel:hover,
+.modal__cancel:focus {
+    color: $white;
+    background-color: $silver;
+}
+
+/* Modal agree button */
+.modal__submit {
+    @include btnDefault;
+}
+
+/* Modal agree button hover and focus */
+.modal__submit:hover,
+.modal__submit:focus {
+    @include btnDefaultHover; 
+}
+
+.modal--link {
+    @extend .modal__submit;
+    border: 0.2rem solid $red;
+}
+
+.modal--link:hover,
+.modal--link:focus {
+    @extend .modal__submit:hover;
+    text-decoration: none;
+}

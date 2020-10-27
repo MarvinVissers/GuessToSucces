@@ -1,0 +1,111 @@
+/* Linking to custom F1 font */
+@font-face {
+  font-family: 'Formula1';
+  src: url("../../fonts/Formula1-Regular.ttf") format("truetype"), url("../../fonts/Formula1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Overview bet cards */
+.bet-overview__cards {
+  font-size: 1.4rem;
+  margin-top: 5rem;
+}
+
+.card {
+  margin-bottom: 2.5rem;
+}
+
+/* Card title */
+.card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  color: #212121;
+  font-size: 1.6rem;
+}
+
+/* Card subtitle */
+.card-subtitle {
+  color: #6f6f6f;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+/* Card p without margin */
+.card--no-margin {
+  margin-bottom: 0;
+}
+
+/* Card links */
+.card__link {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  color: red;
+  font-size: inherit;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+/* Making sure the first link does not have a margin-left */
+.card__link:first-child {
+  margin-left: 0;
+}
+
+.card__link::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 0.1rem;
+  width: 0;
+  background-color: red;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  opacity: 0.5;
+}
+
+.card__link:hover {
+  color: red;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+}
+
+.card__link:hover::after {
+  width: 100%;
+}
+
+/* Card edit styling */
+.card--hide {
+  display: none;
+}
+
+.card--input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+}
+
+.card__input {
+  display: inline-block;
+  max-width: 12rem;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=bet-overview.css.map */

@@ -1,0 +1,56 @@
+// Importing variables and mixins
+@import '../components/variables.scss';
+@import '../components/mixins.scss';
+
+/* Login block styling */
+.login {
+    display: block;
+    width: 100%;
+    max-width: 75rem;
+    margin: 2.5rem auto 0;
+    padding: 0 1.5rem;
+}
+
+/* Login actions styling */
+.login__actions {
+    font-size: $fontSizeSmall;
+    margin-top: 2.5rem;
+}
+
+/* 
+* Login actions links 
+*/
+/* Forgot password */
+.forgot-password--link {
+    @include defaultLink;
+}
+
+.forgot-password--link::after {
+    @include defaultLinkAfter;
+}
+
+.forgot-password--link:hover {
+    @include defaultLinkHover;
+}
+
+.forgot-password--link:hover::after {
+    @include defaultLinkHoverAfter;
+}
+
+/* Create account */
+.create-account--link {
+    @include defaultLink;
+    margin-left: 2rem;
+}
+
+.create-account--link::after {
+    @include defaultLinkAfter;
+}
+
+.create-account--link:hover {
+    @include defaultLinkHover;
+}
+
+.create-account--link:hover::after {
+    @include defaultLinkHoverAfter;
+}

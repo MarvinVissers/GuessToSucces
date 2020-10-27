@@ -1,0 +1,37 @@
+// Importing variables and mixins
+@import '../components/variables.scss';
+@import '../components/mixins.scss';
+
+/* Create account block styling */
+.create-account {
+    display: block;
+    width: 100%;
+    margin: 2.5rem auto 0;
+    padding: 0 1.5rem;
+}
+
+/* Create account actions styling */
+.create-account__actions {
+    font-size: $fontSizeSmall;
+    margin-top: 2.5rem;
+}
+
+/* 
+* Create account actions links 
+*/
+/* Forgot password */
+.login--link {
+    @include defaultLink;
+}
+
+.login--link::after {
+    @include defaultLinkAfter;
+}
+
+.login--link:hover {
+    @include defaultLinkHover;
+}
+
+.login--link:hover::after {
+    @include defaultLinkHoverAfter;
+}

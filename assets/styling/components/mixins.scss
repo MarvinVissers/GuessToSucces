@@ -1,0 +1,65 @@
+// Mixin for navbr ul parts
+@mixin navbarSection {
+    height: auto;
+    padding: 1rem 0;
+}
+
+// Mixin for the default button
+@mixin btnDefault {
+    color: $black;
+    font-size: $fontSizeSmall;
+    font-family: $titleFont;
+    padding: 0.5rem 1.5rem;
+    border-color: $red;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+// Mixin for the default button hover
+@mixin btnDefaultHover {
+    color: $white;
+    text-decoration: none;
+    background-color: $red;
+}
+
+// Mixin for the default link styling
+@mixin defaultLink {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    color: $red;
+    font-size: inherit;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+}
+
+// Mixin for the default link after
+@mixin defaultLinkAfter {
+    content: '';
+    position: relative;
+    display: block;
+    height: 0.1rem;
+    width: 0;
+    background-color: $red;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    opacity: 0.5;  
+}
+
+// Mixin for default link hover
+@mixin defaultLinkHover {
+    color: $red;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+}
+
+// Mixin for default link after hover
+@mixin defaultLinkHoverAfter {
+    width: 100%;
+}
+
+// Mixin for the place bet form
+@mixin indexBetCategorieForm {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,87 @@
+// Styling for the login page
+@import '../components/variables.scss';
+@import '../components/mixins.scss';
+
+/* Page404 section */
+.page404 {
+    @include mainSection;
+    justify-items: center;
+    min-height: calc(100vh - 10rem);
+    width: 100%;
+    max-width: 60rem;
+}
+
+/* Section wrapper */
+.page404__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+/* section title */
+.page404__title {
+    @include sectionTitle;
+    justify-content: center;
+}
+
+/* Number before the title */
+.page404__title::before {
+    @include titleNumber('404.');
+}
+
+/* Section text */
+.page404__text {
+    font-size: $fontSizeNormal;
+    text-align: center;
+    margin: 0 0 1.5rem;   
+}
+
+/* Text link */
+.page404__link {
+    @include textLink;
+}
+
+/* Line under the link */
+.page404__link::after {
+    @include textLinkAfter;
+}
+
+/* Making sure the color stays the same and the text decoration is none */
+.page404__link:hover {
+    @include textLinkHover;
+}
+
+/* Showing my own underline */
+.page404__link:hover::after {
+    @include textLinkHoverAfter;
+}
+
+@media only screen and (min-width: $media-breakpoint-up-sm) {
+    /* Making the section title bigger */
+    .page404__title {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (min-width: $media-breakpoint-up-md) {
+    /* Making the section title bigger */
+    .page404__title {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (min-width: $media-breakpoint-up-lg) {
+    /* Making the section title bigger */
+    .page404__title {
+        font-size: 30rem;
+    }
+}
+
+@media only screen and (min-width: $media-breakpoint-up-xl) {
+    /* Making the section title bigger */
+    .page404__title {
+        font-size: 3.2rem;
+    }
+}
